@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    user-select: none;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    width: 90vw;
+    display: flex;
+}
+.panel {
+    position: relative;
+    /* background-image: url(./images/city-on-winter.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    flex: 1;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: flex 700ms ease-in-out;
+}
+.panel h3 {
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 24px;
+
+}
+
+/* transition: flex 700ms ease-in-out; */
+/* .panel:hover {
+    flex: 10;  
+} */
+
+/* modifier opacité et la transition du texte lorsque l'image s'elargit */
+/* .panel:hover [type=description] {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+} */
+.click-panel {
+    flex: 10;
+    transition: flex 700ms ease-in-out;
+}
+.click-h3 [type=description] {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+/* @media (max-width: 980px){
+    .panel h3 {
+        opacity: 0;
+    }
+     
+} */
+
+/* .panel.active {
+    flex: 5;
+} */
+
+#world {
+    background-image: url(./images/explore-the-world.jpg);
+}
+#forest {
+    background-image: url(./images/wild-forest.jpg);
+}
+#beach {
+    background-image: url(./images/sunny-beach.jpg);
+}
+#winter {
+    background-image: url(./images/city-on-winter.jpg);
+}
+#cloud {
+    background-image: url(./images/mountains-and-clouds.jpg);
+}
